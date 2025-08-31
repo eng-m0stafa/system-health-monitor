@@ -1,0 +1,20 @@
+# Reports directory contents (keep directory structure)
+reports/*.txt
+reports/*.log
+
+# Docker
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+*.tmp
+*.temp
