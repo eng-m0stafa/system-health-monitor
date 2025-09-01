@@ -9,7 +9,9 @@ WORKDIR /app
 
 # Copy project files
 COPY scripts/ ./scripts/
-COPY reports/ ./reports/
+
+# Create reports directory (instead of copying empty directory)
+RUN mkdir -p ./reports
 
 # Make scripts executable
 RUN chmod +x scripts/*.sh
@@ -19,4 +21,4 @@ RUN adduser -D -s /bin/bash healthuser
 USER healthuser
 
 # Set default command
-CMD ["./scripts/health-check.sh"]
+CMD ["/bin/bash", "./scripts/health-check.sh"]
