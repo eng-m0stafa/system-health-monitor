@@ -1,4 +1,4 @@
-# 🏥 System Health Monitor
+# System Health Monitor
 
 A beginner-friendly DevOps project that demonstrates automation, containerization, and CI/CD using Bash, Docker, and GitHub Actions.
 
